@@ -56,7 +56,7 @@ To check node and npm versions,<br> <br>
 
 <br>
 For reference, I have attached <a href="https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/package.json">package.json</a> of an angular application, I have deployed on Heroku.<br><br>
-<strong>Step 5: Create Node Server</strong>
+<strong>Step 5: Create Node Server</strong> <br>
 Create a <strong>node server</strong> that will serve the compiled files in dist directory. For that we will use<strong> Express</strong> <br>
 Run the following command in the project directory
 
