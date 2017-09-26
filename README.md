@@ -94,28 +94,26 @@ In "scripts" attribute,
 <strong>Step 6: Deploying app to Heroku</strong>
 <br>In project directory, run the following command,
 
-1.
 ```
 $git init
 ```
 
-2.
 ```
 heroku login
 ```
-3.
+
 ```
 heroku git:remote -a heroku-project-name
 ```
-4.
+
 ```
 git add .
 ```
-5.
+
 ```
 git commit -m "initial heroku commit"
 ```
-6.
+
 ```
 git push heroku master
 ```
