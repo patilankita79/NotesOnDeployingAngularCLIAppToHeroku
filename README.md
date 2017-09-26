@@ -3,7 +3,7 @@ Steps to be followed for deploying Angular CLI application to Heroku. <br>
 Heroku is a cloud platform as a service.
 <hr>
 <strong>Step 1:</strong> <br>
-Create an account on Heroku <br>
+Create an account on Heroku <br><br>
 <strong>Step 2:</strong> <br>
 Login the Heroku account.
 ```
@@ -12,11 +12,11 @@ Click new -> Create new app -> Give app name.
 <br> <br>
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.23.png" />
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.41.png" />
-<br>
+<br><br>
 <strong>Step 3:</strong> <br>
 Select the deployment method out of Heroku Git, GitHub, dropbox.
 I have used Heroku Git (Usig Heroku CLI) as a deployment method. <br><br>
-Download and install <a href = "https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a> <br>
+Download and install <a href = "https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a> <br><br>
 <strong>Step 4:</strong> <br>
 Before deploying angular application to Heroku, we need to configure angular application. <br>
 
@@ -55,7 +55,7 @@ To check node and npm versions,<br> <br>
 ```
 
 <br>
-For reference, I have attached <a href="https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/package.json">package.json</a> of an angular application
+For reference, I have attached <a href="https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/package.json">package.json</a> of an angular application, I have deployed on Heroku.<br><br>
 <strong>Step 5: Create Node Server</strong>
 Create a <strong>node server</strong> that will serve the compiled files in dist directory. For that we will use<strong> Express</strong> <br>
 Run the following command in the project directory
@@ -92,7 +92,7 @@ In "scripts" attribute,
 ```
  "start": "node server.js"
  ```
-<br>
+<br><br>
 <strong>Step 6: Deploying app to Heroku</strong>
 <br>In project directory, run the following command,
 
