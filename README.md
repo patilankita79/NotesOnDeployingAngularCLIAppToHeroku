@@ -3,13 +3,13 @@ Steps to be followed for deploying Angular CLI application to Heroku. <br>
 Heroku is a cloud platform as a service.
 <hr>
 <strong>Step 1:</strong> <br>
-<li>Create an account on Heroku</li>
-<li></li> <br>
+<li>Create an account on Heroku</li> <br>
 <strong>Step 2:</strong> <br>
 Login the Heroku account.
 Click new -> Create new app -> Give app name.
-<img src = "" />
-<img src = "" />
+<br>
+<img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.23.png" />
+<img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.41.png" />
 <strong>Step 3:</strong> <br>
 Select the deployment method out of Heroku Git, GitHub, dropbox. <br>
 I have used Heroku Git (Usig Heroku CLI) as a deployment method. <br>
@@ -40,7 +40,7 @@ ng build command creates the compiled version in dist folder.
 Add "engines" attribute in package.json and sppecify node and npm versions that you have used to build application. This will prevent the version issues
 
 To check node and npm versions,
-<img src = "" />
+<img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/NodeNpmVersionInfo.png" />
     
 <strong>Step 5:</strong>
 Create a node server that will serve the compiled files in dist directory. For that we will use Express <br>
@@ -53,6 +53,7 @@ This will add dependencies in package.json of angular application<br>
 Create Express server <br>
 Create server.js in the root directory of angular application
 
+```
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -66,6 +67,8 @@ app.listen(process.env.PORT || 8080);
 app.get('/*', function(req, res) {
 res.sendFile(path.join(__dirname + '/dist/index.html'));
 })
+```
+For reference, I have attached <a href="">server.js</a>
 
 Tell Heroku to run server.js when application start
 Add server.js in package.json
