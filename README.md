@@ -39,7 +39,7 @@ ng build command creates the compiled version in dist folder.
 
 Add "engines" attribute in package.json and sppecify node and npm versions that you have used to build application. This will prevent the version issues
 
-To check node and npm versions,
+To check node and npm versions,<br>
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/NodeNpmVersionInfo.png" />
     
 <strong>Step 5:</strong>
