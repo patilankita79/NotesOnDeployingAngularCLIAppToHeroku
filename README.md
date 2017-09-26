@@ -41,7 +41,8 @@ Add "engines" attribute in package.json and sppecify node and npm versions that 
 
 To check node and npm versions,<br>
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/NodeNpmVersionInfo.png" />
-    
+<br>
+For reference, I have attached <a href="">package.json</a> of an angular application
 <strong>Step 5:</strong>
 Create a node server that will serve the compiled files in dist directory. For that we will use Express <br>
 Run the following command in the project directory
