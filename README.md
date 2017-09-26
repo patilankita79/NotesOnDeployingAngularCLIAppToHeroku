@@ -14,8 +14,8 @@ Click new -> Create new app -> Give app name.
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.41.png" />
 <br>
 <strong>Step 3:</strong> <br>
-Select the deployment method out of Heroku Git, GitHub, dropbox. <br>
-I have used Heroku Git (Usig Heroku CLI) as a deployment method. <br>
+Select the deployment method out of Heroku Git, GitHub, dropbox.
+I have used Heroku Git (Usig Heroku CLI) as a deployment method. <br><br>
 Download and install <a href = "https://devcenter.heroku.com/articles/heroku-cli">Heroku CLI</a> <br>
 <strong>Step 4:</strong> <br>
 Before deploying angular application to Heroku, we need to configure angular application. <br>
@@ -44,7 +44,7 @@ ng build command creates the compiled version in <strong>dist</strong> folder.
 <br>
 Add "engines" attribute in package.json and sppecify node and npm versions that you have used to build application. This will prevent the version issues.
 
-To check node and npm versions,<br>
+To check node and npm versions,<br> <br>
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/NodeNpmVersionInfo.png" />
 
 ```
@@ -82,7 +82,7 @@ app.get('/*', function(req, res) {
 res.sendFile(path.join(__dirname + '/dist/index.html'));
 })
 ```
-For reference, I have attached <a href="">server.js</a>
+For reference, I have attached <a href="https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/server.js">server.js</a>
 <br>
 To tell Heroku to run server.js when application starts, we need to add server.js in package.json
 <br>
