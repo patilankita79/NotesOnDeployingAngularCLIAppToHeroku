@@ -3,11 +3,13 @@ Steps to be followed for deploying Angular CLI application to Heroku. <br>
 Heroku is a cloud platform as a service.
 <hr>
 <strong>Step 1:</strong> <br>
-<li>Create an account on Heroku</li> <br>
+Create an account on Heroku <br>
 <strong>Step 2:</strong> <br>
 Login the Heroku account.
+```
 Click new -> Create new app -> Give app name.
-<br>
+```
+<br> <br>
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.23.png" />
 <img src = "https://github.com/patilankita79/Notes_DeployingAngularCLIAppToHeroku/blob/master/Screenshots_DeployAppToHeroku/Screenshot%202017-09-25%2020.22.41.png" />
 <br>
@@ -23,7 +25,7 @@ Before deploying angular application to Heroku, we need to configure angular app
 <strong>Make the following changes in package.json </strong> <br>
 
 Heroku will install all the dependencies that are present in "dependencies" attribute. 
-Move following dependecies from "devDependencies" to "dependencies"
+Move the following dependencies from "devDependencies" to "dependencies" <br>
 ```
 "@angular/compiler": "^4.2.4",
     "@angular/compiler-cli": "^4.2.4",
