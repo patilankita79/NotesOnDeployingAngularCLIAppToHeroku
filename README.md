@@ -98,7 +98,7 @@ In "scripts" attribute,
 <br>In project directory, run the following command,
 
 ```
-$git init
+git init
 ```
 
 ```
